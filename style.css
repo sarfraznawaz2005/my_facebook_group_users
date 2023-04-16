@@ -1,0 +1,71 @@
+#my-group-extension-popup {
+  font-family: Arial, sans-serif;
+  width: 400px; /* Increased width to fit list of group members */
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#my-group-extension-popup a {
+  color: #1877F2;
+  text-decoration: none;
+}
+
+#my-group-extension-popup a:hover {
+  text-decoration: underline;
+}
+
+#my-group-extension-popup #my-group-extension-button {
+  background-color: #1877F2;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#my-group-extension-popup #my-group-extension-button.remove-button {
+  background-color: red;
+}
+
+#my-group-extension-popup h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#my-group-extension-popup ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Removed margin to remove white space */
+  width: 100%; /* Added width to fill parent container */
+}
+
+#my-group-extension-popup li {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; /* Added padding to make list items more visible */
+  border-bottom: 1px solid #ddd; /* Added border to separate list items */
+}
+
+#my-group-extension-popup li:last-child {
+  border-bottom: none; /* Removed border from last list item */
+}
+
+#my-group-extension-popup li a {
+  flex-grow: 1;
+  margin-right: 10px; /* Added margin to separate link from button */
+}
+
+#my-group-extension-popup li button {
+  margin-left: 10px;
+}
